@@ -8,17 +8,30 @@
 
 ## Purpose
 
-This repository contains **execution evidence** from the Echo Judgment System.
+Evidence repository for judgment STOP events.
 
-**What This Contains**:
+Read-only incident logs and artifacts.
+No interpretation.
+No discussion.
+No attribution.
+
+**This repository contains factual execution artifacts only.**
+**It does not assert intent, reasoning, or responsibility.**
+
+---
+
+## What This Contains
+
 - Incident logs (what happened)
 - Artifacts (screenshots, STOP reports, execution logs)
 - Postmortem analyses (after-the-fact reconstruction)
 
-**What This Does NOT Contain**:
+## What This Does NOT Contain
+
 - Interpretation of events (facts only)
 - Normative claims ("should have" statements)
-- Design principles (those belong in Boundary Constitution repo)
+- Design principles (those belong in external constitution repos)
+- Attribution of decision-makers
 
 ---
 
@@ -98,6 +111,7 @@ This repository contains **execution evidence** from the Echo Judgment System.
   POSTMORTEM_TEMPLATE.md
 
 README.md                   # This file
+ATTRIBUTION.md             # Attribution policy
 ```
 
 ---
@@ -126,7 +140,7 @@ README.md                   # This file
 - Evidence Chain
 - Root Cause (factual, not interpretive)
 - System State Before/After
-- No Recommendations (those belong in Boundary Constitution repo)
+- No Recommendations (those belong in design repos)
 
 **See**: `templates/POSTMORTEM_TEMPLATE.md`
 
@@ -134,9 +148,9 @@ README.md                   # This file
 
 ## Relationship to Other Repositories
 
-**Boundary Constitution Repo** (https://github.com/Nick-heo-eg/EchoJudgmentSystem_v10-1):
-- Defines what SHOULD happen (norms)
-- Contains STOP rules, principles, architecture
+**Design/Constitution Repos**:
+- Define what SHOULD happen (norms)
+- Contain STOP rules, principles, architecture
 - **Normative** (this is how system is designed)
 
 **This Repo** (Execution Evidence):
@@ -144,15 +158,9 @@ README.md                   # This file
 - Contains incidents, artifacts, postmortems
 - **Descriptive** (this is what occurred)
 
-**Concept Vocabulary Repo** (planned):
-- Defines terms used in both repos
-- Open for refinement
-- **Definitional** (this is what we mean by X)
-
 **Direction of Reference**:
 - Evidence → Constitution (incident cites violated rule)
 - Constitution → Evidence (example incidents linked)
-- Vocabulary ← Both (terms used by both)
 
 ---
 
@@ -165,7 +173,7 @@ README.md                   # This file
 **Discussions**: Disabled (interpretation belongs elsewhere)
 
 **Who Can Write**:
-- Only automated execution logs from headed_executor
+- Only automated execution logs from judgment execution systems
 - Manual incident reports (following template strictly)
 - Postmortems (only when boundary violated)
 
@@ -175,7 +183,7 @@ README.md                   # This file
 
 ## Time Axis
 
-**Boundary Constitution Repo**: Fixed time axis
+**Constitution Repos**: Fixed time axis
 - Locked at specific git tags
 - Changes require new version (not edits)
 - Represents "system as designed at time T"
@@ -210,13 +218,12 @@ README.md                   # This file
 
 ## Non-Goals
 
-See Boundary Constitution repo's NON-GOALS.md for full list.
-
 **This repo specifically does NOT**:
 - Interpret why events happened (descriptive only)
 - Recommend changes to STOP rules (evidence, not design)
 - Provide analysis of trends (raw data only)
 - Serve as issue tracker (not a bug database)
+- Attribute decisions to specific systems or agents
 
 ---
 
@@ -225,8 +232,8 @@ See Boundary Constitution repo's NON-GOALS.md for full list.
 When referencing incidents from this repo:
 
 ```
-Incident Log 001, Echo Judgment System Execution Evidence
-Repository: https://github.com/Nick-heo-eg/echo-judgment-execution-evidence
+Incident Log 001, Judgment Execution Evidence Repository
+Repository: https://github.com/Nick-heo-eg/judgment-execution-evidence
 Timestamp: [incident timestamp]
 Accessed: [access date]
 ```
@@ -241,9 +248,7 @@ Accessed: [access date]
 
 **For Questions About Evidence**: Not supported (evidence speaks for itself)
 
-**For Design Questions**: See Boundary Constitution repo
-
-**For Term Definitions**: See Concept Vocabulary repo (when created)
+**For Design Questions**: See constitution repositories
 
 ---
 
@@ -255,7 +260,7 @@ Accessed: [access date]
 
 **Current Incident Count**: 0 (initial structure only)
 
-**Last Structure Update**: 2025-12-20
+**Last Structure Update**: 2026-01-05
 
 ---
 
@@ -266,3 +271,7 @@ Accessed: [access date]
 **This repository records what did happen.**
 
 **Interpretation lives elsewhere.**
+
+**No component, system, or agent is attributed as the decision-maker in this repository.**
+
+**Artifacts represent execution state only.**

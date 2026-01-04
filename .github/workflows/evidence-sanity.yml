@@ -1,0 +1,35 @@
+name: Evidence Sanity Notice
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  notice:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Evidence Repository Notice
+        run: |
+          echo "┌─────────────────────────────────────────────────────────┐"
+          echo "│  EVIDENCE REPOSITORY NOTICE                             │"
+          echo "└─────────────────────────────────────────────────────────┘"
+          echo ""
+          echo "This repository is evidence-only."
+          echo ""
+          echo "✓ ALLOWED:"
+          echo "  - Factual incident logs"
+          echo "  - Execution artifacts"
+          echo "  - Temporal records"
+          echo ""
+          echo "✗ NOT ALLOWED:"
+          echo "  - Interpretation of events"
+          echo "  - Attribution of decisions"
+          echo "  - Normative claims"
+          echo "  - Design recommendations"
+          echo ""
+          echo "Any analysis must occur outside this repository."
+          echo ""
+          echo "See ATTRIBUTION.md for policy details."
+          echo "─────────────────────────────────────────────────────────"
