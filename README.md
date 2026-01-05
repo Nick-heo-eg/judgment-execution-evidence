@@ -6,6 +6,20 @@
 
 ---
 
+## ⚠️ Critical Warning
+
+This repository contains **read-only evidence artifacts**.
+
+- ❌ No interpretation
+- ❌ No discussion
+- ❌ No implementation details
+
+It exists solely to preserve raw decision evidence produced by upstream systems and defined by the [AJT specification](https://github.com/Nick-heo-eg/spec).
+
+**This is not a documentation repository. This is an evidence vault.**
+
+---
+
 ## Purpose
 
 Evidence repository for judgment STOP events.
