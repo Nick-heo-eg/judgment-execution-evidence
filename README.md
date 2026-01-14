@@ -1,5 +1,10 @@
 # Execution Evidence Repository
 
+This repository preserves execution evidence generated during controlled research experiments.
+It does not represent production authority, enforcement, or live judgment.
+
+---
+
 **Repository Type**: Evidence Archive (Read-Only)
 
 **Status**: Locked (No Interpretation Allowed)
